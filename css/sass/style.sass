@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400i')
+// @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400i')
 
 *
 	outline: none !important
@@ -8,11 +8,12 @@ html
 	height: 100%
 
 body
-	font-family: 'Open Sans', sans-serif
-	font-weight: 400
+	font-family: "Open Sans", open-sans, sans-serif
+	font-size: 12px
+	font-weight: 300
 	color: #434C5E
 	margin: 0
-	font-size: 12px
+	letter-spacing: .25px
 	line-height: 17px
 	height: 100%
 	display: flex
@@ -26,15 +27,17 @@ h1, h2, h3, h4, h5, h6, p, ul
 	margin-top: 0
 	font-weight: inherit
 
+h1, h2, h3, h4, h5, h6
+	font-weight: 400
+	margin-bottom: 20px
+
 h3 
 	font-size: 30px
 	line-height: 34px
-	margin-bottom: 20px
 h5 
 	font-size: 14px
 	line-height: 20px
-	margin-bottom: 20px
-	letter-spacing: .99px
+	letter-spacing: 1.2px
 	text-transform: uppercase
 	color: #596377
 
@@ -108,7 +111,6 @@ p
 
 .change-plan-price 
 	font-size: 14px
-	font-weight: 400
 	color: #8C96A9
 	letter-spacing: 0
 	margin-bottom: 10px
@@ -116,11 +118,11 @@ p
 		color: #434C5E
 		display: inline-block
 		font-size: 20px
-		font-weight: 300
 		transform: translateY(-14px) translateX(-3px)
 		vertical-align: super
 	.price
 		font-size: 48px
+		font-weight: 400
 		color: #434C5E
 		line-height: 1
 	.asterisk 
@@ -130,7 +132,6 @@ p
 
 .change-plan-yearly
 	color: #11B683
-	letter-spacing: 0
 	margin-bottom: 20px
 	visibility: hidden
 
@@ -147,7 +148,6 @@ p
 .change-plan-summary
 	font-style: italic
 	color: #8C96A9
-	letter-spacing: 0
 	line-height: 18px
 	margin-bottom: 20px
 
@@ -188,9 +188,9 @@ p
 .button
 	display: inline-block
 	font-size: 10px
-	font-weight: 700
+	font-weight: 600
 	text-decoration: none
-	letter-spacing: .5px
+	letter-spacing: .65px
 	line-height: 36px
 	text-align: center
 	text-transform: uppercase
@@ -207,7 +207,8 @@ p
 			background: #ff5a83
 
 .message 
-	margin-top: 6.5px
+	color: #5f697a
+	margin-top: 7px
 	text-align: left
 	@media (max-width: 991px) 
 		margin-bottom: 20px
@@ -216,10 +217,10 @@ p
 	position: relative
 	padding-bottom: 50px
 	text-transform: uppercase
-	font-weight: 700
-	letter-spacing: 1px
+	font-weight: 600
+	letter-spacing: 1.3px
 	line-height: 24px
-	color: #8C96A9
+	color: #919AAB
 	@media (max-width: 575px)
 		text-align: left
 	span 
@@ -228,12 +229,12 @@ p
 	label
 		display: inline-block
 		cursor: pointer
-		margin: 0 15px
+		margin: 0 11px
 		.lever
 			position: relative
 			width: 44px
 			height: 24px
-			background-color: #434C5E
+			background-color: #5a6477 
 			border-radius: 15px
 			&:after
 				content: ""
@@ -246,7 +247,7 @@ p
 				border-radius: 100px
 				left: 2px
 				top: 50%
-				transition: left .3s ease
+				transition: all .2s
 		input[type=checkbox]
 			opacity: 0
 			width: 0
@@ -255,6 +256,16 @@ p
 			&:checked + .lever
 				&:after
 					left: 22px
+	
+.toggler
+	cursor: pointer
+#monthly 
+	color: #596377
+#switch-wrap.active 
+	#monthly 
+		color: inherit
+	#yearly 
+		color: #596377
 
 .plan-save
 	position: relative
@@ -284,22 +295,11 @@ p
 		width: 260px
 		height: 37.5px
 
-@media (min-width: 576px)
-
-@media (min-width: 768px)
-
-@media (min-width: 992px)
-			
-@media (min-width: 1200px)
 
 
 
-@media (max-width: 1199px)
 
-@media (max-width: 991px)
 
-@media (max-width: 767px)
 
-@media (max-width: 575px)
 
 

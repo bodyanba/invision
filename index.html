@@ -17,12 +17,7 @@
 					<div class="box">
 						<h5>Starter</h5>
 						<div class="change-plan-price">
-							<span class="dollar-sign">$</span>
-							<span class="price ng-binding">
-								<span class="monthly">15</span>
-								<span class="yearly">13</span>
-							</span>
-							<span class="asterisk">*</span> / mo
+							<span class="dollar-sign">$</span><span class="price"><span class="monthly">15</span><span class="yearly">13</span></span><span class="asterisk">*</span> / mo
 						</div>
 						<div class="change-plan-yearly">Save $24 a year</div>
 						<ul class="checkmark-list">
@@ -39,12 +34,7 @@
 					<div class="box">
 						<h5>Professional</h5>
 						<div class="change-plan-price">
-							<span class="dollar-sign">$</span>
-							<span class="price ng-binding">
-								<span class="monthly">25</span>
-								<span class="yearly">22</span>
-							</span>
-							<span class="asterisk">*</span> / mo
+							<span class="dollar-sign">$</span><span class="price"><span class="monthly">25</span><span class="yearly">22</span></span><span class="asterisk">*</span> / mo
 						</div>
 						<div class="change-plan-yearly">Save $36 a year</div>
 						<div class="recommended"></div>
@@ -62,12 +52,7 @@
 					<div class="box">
 						<h5>Team</h5>
 						<div class="change-plan-price">
-							<span class="dollar-sign">$</span>
-							<span class="price ng-binding">
-								<span class="monthly">99</span>
-								<span class="yearly">89</span>
-							</span>
-							<span class="asterisk">*</span> / mo
+							<span class="dollar-sign">$</span><span class="price"><span class="monthly">99</span><span class="yearly">89</span></span><span class="asterisk">*</span> / mo
 						</div>
 						<div class="change-plan-yearly">Save $120 a year</div>
 						<ul class="checkmark-list">
@@ -96,13 +81,13 @@
 				</div>
 			</div>
 			<div class="message">* Plus applicable taxes</div>
-			<div class="switch-wrap">
-				<span>Monthly</span>
+			<div class="switch-wrap" id="switch-wrap">
+				<span id="monthly" class="toggler active">Monthly</span>
 				<label>
 					<input type="checkbox" id="checkbox">
 					<span class="lever"></span>
 				</label>
-				<span class="plan-save">Yearly</span>
+				<span id="yearly" class="toggler plan-save">Yearly</span>
 			</div>
 			<div class="change-plan-trusted-footer"></div>
 		</div>
