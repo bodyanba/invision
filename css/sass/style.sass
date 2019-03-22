@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400')
+
 *
 	outline: none !important
 	box-sizing: border-box
@@ -48,14 +50,11 @@ a
 
 .container 
 	width: 100%
-	max-width: 1090px
+	max-width: 1100px
 	margin: auto
-	padding: 50px 10px
+	padding: 50px 15px
 	@media (max-width: 991px)
 		max-width: 560px
-
-.mt-auto 
-	margin-top: auto
 
 .text-center 
 	text-align: center
@@ -67,7 +66,7 @@ a
 
 .col 
 	padding: 0 10px
-	margin-bottom: 20px
+	margin-bottom: 15px
 	width: 100%
 	@media (min-width: 576px) and (max-width: 991px)
 		flex: 0 0 50%
@@ -80,7 +79,7 @@ a
 	height: 100%
 	display: flex
 	flex-direction: column
-	padding: 34px 20px 40px
+	padding: 34px 20px
 	position: relative
 	border-top: 6px solid #596377
 	border-radius: 5px
@@ -118,21 +117,14 @@ a
 	color: #7e8bc2
 	letter-spacing: 0
 	margin-bottom: 10px
-	.dollar-sign 
-		// color: #434C5E
+	.dollar-sign
 		display: inline-block
 		font-size: 20px
 		transform: translateY(-14px) translateX(-3px)
 		vertical-align: super
 	.price
 		font-size: 48px
-		// font-weight: 400
-		// color: #434C5E
 		line-height: 1
-	.asterisk 
-		position: relative
-		bottom: 25px
-		color: #434C5E
 
 .change-plan-yearly
 	color: #2681ff
@@ -171,26 +163,29 @@ a
 		padding-left: 24px
 		text-align: left
 		margin-bottom: 6px
-		&:before 
+		&:before, &:after 
 			content: ''
 			position: absolute
-			left: 0
-			top: 8px
-			width: 14px
-			height: 11px
-			background-position: -1278px -766px
-			background-repeat: no-repeat
-			background-size: 1293px 1277px
-			background-image: url(../img/sprite@2x.png)
+		&:before
+			transform: rotate(-45deg)
+		&:after 
+			transform: rotate(45deg)
+			top: 6px
+		&:not(.unsupported):after 
+			left: 4px
+			width: 4px
+			height: 10px
+			border: 1.5px solid #434C5E
+			border-left: 0
+			border-top: 0
 		&.unsupported
 			opacity: .4
-			&:before
-				left: -2px
-				top: 2px
-				width: 18px
-				height: 18px
-				background-repeat: no-repeat
-				background-position: -835px -1047px
+			&:before, &:after 
+				left: 6px
+				top: 6px
+				width: 1.5px
+				height: 12px
+				background-color: #8C96A9
 
 .button
 	display: inline-block
@@ -213,23 +208,15 @@ a
 		&:hover 
 			background: #ff5a83
 
-.message 
-	color: #5f697a
-	margin-top: 7px
-	text-align: left
-	@media (max-width: 991px) 
-		margin-bottom: 20px
-
 .switch-wrap
 	position: relative
+	padding-top: 5px
 	padding-bottom: 50px
 	text-transform: uppercase
 	font-weight: 600
 	letter-spacing: 1.3px
 	line-height: 24px
 	color: #919AAB
-	@media (max-width: 575px)
-		text-align: left
 	span 
 		display: inline-block
 		vertical-align: middle
@@ -273,40 +260,3 @@ a
 		color: inherit
 	#yearly 
 		color: #596377
-
-.plan-save
-	position: relative
-	&:before
-		content: ''
-		position: absolute
-		right: -72px
-		top: -25px
-		width: 68px
-		height: 42px
-		background-position: -993px -543px
-		background-repeat: no-repeat
-		background-size: 1293px 1277px
-		background-image: url(../img/sprite@2x.png)
-
-.change-plan-trusted-footer
-	margin: 26px auto 0
-	background-image: url(../img/sprite@2x.png)
-	background-repeat: no-repeat
-	background-position: 0 -588px
-	background-size: 1293px 1277px
-	width: 520px
-	height: 75px
-	@media (max-width: 575px)
-		background-position: 0 -294px
-		background-size: 646.5px 638.5px
-		width: 260px
-		height: 37.5px
-
-
-
-
-
-
-
-
-
